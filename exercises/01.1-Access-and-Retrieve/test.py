@@ -10,7 +10,7 @@ def test_output_one(capsys, app):
 def test_output_two(capsys, app):
     app()
     captured = capsys.readouterr()
-    assert 4 in captured.out
+    assert "4\n" in captured.out
 
 @pytest.mark.it('Set the position were thrusday is to None')
 def test_position_two():
