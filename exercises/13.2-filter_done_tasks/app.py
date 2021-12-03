@@ -12,4 +12,6 @@ tasks = [
 
 
 #Your code go here:
-
+new_tasks_list = list(filter(lambda task: True in task.values(), tasks))
+print(new_tasks_list)
+#task["done"] == True

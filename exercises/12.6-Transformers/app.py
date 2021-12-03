@@ -7,5 +7,8 @@ incomingAJAXData = [
 ]
 
 #Your code go here:
+def my_var(name_dict):
+	return f'{name_dict["name"]} {name_dict["lastName"]}'
 
-
+transformedData = list(map(my_var, incomingAJAXData))
+print(transformedData)
